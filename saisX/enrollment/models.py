@@ -4,15 +4,15 @@ from django.db import models
 
 # Create your models here.
 class Student(models.Model):
-    student_number = models.CharField(max_length=9)
-    sais_number = models.CharField(max_length=8)
+    student_number = models.CharField(max_length=9, primary_key=True)
+    sais_number = models.CharField(max_length=8, unique=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=20)
     middle_name = models.CharField(max_length=20)
     email = models.EmailField()
     contact_number = models.CharField(max_length=20)
-    current_address = models.OneToOneField("Address")
-    home_address = models.OneToOneField("Address")
+    current_address = models.OneToOneField('Address', related_name='student')
+    home_address = models.OneToOneField('Address', related_name='student')
     birthday = models.DateField()
     program_id = models.ForeignKey()
     mother_name = models.CharField(max_length=50)
@@ -20,7 +20,7 @@ class Student(models.Model):
     father_name = models.CharField(max_length=50)
     father_contact = models.CharField(max_length=20)
     year_begin = models.DateField()
-    institution_id = models.ForeignKey()
+    institution_id = models.ForeignKey('Institution', related_name='students')
 
 
 class Program(models.Model):
@@ -40,7 +40,8 @@ class Course(models.Model):
     description = models.TextField()
     category = models.CharField(max_length=50)
     schedule = models.CharField(max_length=20)
-    instructor_id = models.OneToOneField("Instructor")
+    instructor_id = models.ForeignKey(
+        'Instructor', related_name='courses_handled')
     units = models.IntegerField()
     room = models.CharField(max_length=20)
 
