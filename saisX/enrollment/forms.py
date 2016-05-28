@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth import authenticate
+from .models import Student
 from django.contrib.auth.models import User
 
 class UserLoginForm(forms.Form):
@@ -20,3 +21,9 @@ class UserLoginForm(forms.Form):
                 'Username/Password is incorrect.'
             )
         return cleaned_data
+
+
+class StudentForm(forms.ModelForm):
+    class Meta:
+        model = Student
+        fields = ['contact_number', 'email', 'mother_contact', 'father_contact', 'current_address', 'home_address']
