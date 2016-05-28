@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>SAIS | Home</title>
+<body>
+{% if form.errors %}
+<label>Invalid Username or Password</label>
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    Username: {{form.username}}
+    Password: {{form.password}}
+    <button type="submit">LOG IN</button>
+</form>
+
+
+</body>
+</html>
