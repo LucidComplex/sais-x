@@ -14,7 +14,7 @@ class Student(models.Model):
     current_address = models.OneToOneField('Address', related_name='student')
     home_address = models.OneToOneField('Address', related_name='student')
     birthday = models.DateField()
-    program_id = models.ForeignKey()
+    program_id = models.ForeignKey('Program', related_name='students')
     mother_name = models.CharField(max_length=50)
     mother_contact = models.CharField(max_length=20)
     father_name = models.CharField(max_length=50)
@@ -36,13 +36,18 @@ class Address(models.Model):
 
 
 class Course(models.Model):
+    CATEGORY_CHOICES = (
+        ('MST', 'Math, Science, and Technology'),
+        ('SSP', 'Social Sciences and '),
+        ('AH', 'Arts and Humanities'),
+    )
     name = models.CharField(max_length=20)
     description = models.TextField()
-    category = models.CharField(max_length=50)
+    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     schedule = models.CharField(max_length=20)
     instructor_id = models.ForeignKey(
         'Instructor', related_name='courses_handled')
-    units = models.IntegerField()
+    units = models.IntegerField(default='2')
     room = models.CharField(max_length=20)
 
 
