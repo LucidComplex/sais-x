@@ -4,4 +4,4 @@ from .models import Student
 
 class HomeView (TemplateView):
     model = Student
-    template = 'enrollment/home.html'
+    template_name = 'enrollment/home.html'
