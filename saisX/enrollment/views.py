@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth import login
 from django.core.urlresolvers import reverse
 from django.views.generic import TemplateView, FormView, ListView
-from .models import Student
-from .forms import UserLoginForm, StudentForm
+from enrollment.models import Course, Student
+from enrollment.forms import UserLoginForm, StudentForm
 
 class HomeView(TemplateView):
     model = Student
@@ -69,3 +69,9 @@ class EditView(TemplateView):
 class ProfileView(TemplateView):
     model = Student
     template_name = 'enrollment/profile.html'
+
+
+class CourseListView(ListView):
+    model = Course
+    paginate_by = 6
+    template_name = 'enrollment/course_list.html'
