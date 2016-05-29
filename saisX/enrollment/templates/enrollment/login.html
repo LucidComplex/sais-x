@@ -1,17 +1,48 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
-<title>SAIS | Home</title>
-<body>
-{% if form.errors %}
-<label>Invalid Username or Password</label>
-{% endif %}
-<form method="post">
-    {% csrf_token %}
-    Username: {{form.username}}
-    Password: {{form.password}}
-    <button type="submit">LOG IN</button>
-</form>
-
-
-</body>
+  <head>
+    <title>SAIS | Log-in</title>
+    <link href="{% static 'saisX/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'saisX/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row center">
+        <div class="offset-s2 col s8">
+          <div class="card">
+            <div class="card-image">
+              <img src="{% static 'saisX/img/logo-UP.png' %}" alt="" />
+            </div>
+            <div class="card-content">
+              {% if form.errors %}
+              <label>Invalid Username or Password</label>
+              {% endif %}
+              <form method="post">
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <label>Username</label>
+                      {{ form.username }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <label>Password</label>
+                      {{ form.password }}
+                    </div>
+                  </div>
+                  <button class="waves-effezct waves-light get-started btn green darken-3" type="submit" name="action">&nbsp;&nbsp;&nbsp;&nbsp;LOG IN&nbsp;&nbsp;&nbsp;&nbsp;
+                  </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'saisX/js/materialize.js' %}"></script>
+  <script src="{% static 'saisX/js/init.js' %}"></script>
 </html>
