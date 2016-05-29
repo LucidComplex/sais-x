@@ -1,9 +1,11 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
+
 class Student(models.Model):
+    user = models.OneToOneField(User, related_name='student')
     student_number = models.CharField(max_length=9, primary_key=True)
     sais_number = models.CharField(max_length=8, unique=True)
     first_name = models.CharField(max_length=50)
@@ -14,13 +16,13 @@ class Student(models.Model):
     current_address = models.OneToOneField('Address', related_name='+')
     home_address = models.OneToOneField('Address', related_name='+')
     birthday = models.DateField()
-    program_id = models.ForeignKey('Program', related_name='students')
+    program = models.ForeignKey('Program', related_name='students')
     mother_name = models.CharField(max_length=50)
     mother_contact = models.CharField(max_length=20)
     father_name = models.CharField(max_length=50)
     father_contact = models.CharField(max_length=20)
     year_begin = models.DateField()
-    institution_id = models.ForeignKey('Institution', related_name='students')
+    institution = models.ForeignKey('Institution', related_name='students')
 
 
 class Program(models.Model):
@@ -45,7 +47,7 @@ class Course(models.Model):
     description = models.TextField()
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     schedule = models.CharField(max_length=20)
-    instructor_id = models.ForeignKey(
+    instructor = models.ForeignKey(
         'Instructor', related_name='courses_handled')
     units = models.IntegerField(default='2')
     room = models.CharField(max_length=20)
