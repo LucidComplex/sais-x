@@ -1,9 +1,10 @@
-from django.shortcuts import render
 from django.contrib.auth import login
 from django.core.urlresolvers import reverse
+from django.shortcuts import render
 from django.views.generic import TemplateView, FormView, ListView
-from enrollment.models import Course, Student
+
 from enrollment.forms import UserLoginForm, StudentForm
+from enrollment.models import Course, Student
 
 class HomeView(TemplateView):
     model = Student
