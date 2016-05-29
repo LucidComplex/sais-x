@@ -1,9 +1,11 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.auth.models impourt User
 
 # Create your models here.
 class Student(models.Model):
+    user = models.OneToOneField(User, related_name='student')
     student_number = models.CharField(max_length=9, primary_key=True)
     sais_number = models.CharField(max_length=8, unique=True)
     first_name = models.CharField(max_length=50)
