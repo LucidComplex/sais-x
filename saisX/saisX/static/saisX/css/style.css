@@ -8,9 +8,11 @@
 }
 
 .home-buttons{
-  height: 75px !important;
-  width: 300px !important;
+  height: 60px !important;
+  width: 400px !important;
   background-color: #1b5e20 !important;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .navbar {
@@ -20,6 +22,4 @@
 }
 
 .button-span{
-  display: inline-block;
-  vertical-align: middle;
 }
