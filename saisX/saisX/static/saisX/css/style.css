@@ -9,7 +9,7 @@
 
 .home-buttons{
   height: 60px !important;
-  width: 400px !important;
+  width: 350px !important;
   background-color: #1b5e20 !important;
   display: inline-block;
   vertical-align: middle;
@@ -28,6 +28,8 @@
 .hb-div{
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: 10px
+  margin-right: 10px
 }
 
 
