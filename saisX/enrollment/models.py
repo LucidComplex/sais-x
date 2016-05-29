@@ -21,6 +21,7 @@ class Student(models.Model):
     father_contact = models.CharField(max_length=20)
     year_begin = models.DateField()
     institution_id = models.ForeignKey('Institution', related_name='students')
+    enrolled_courses = models.ManyToManyField('Course', through='Takes')
 
 
 class Program(models.Model):
@@ -57,3 +58,10 @@ class Instructor(models.Model):
 
 class Institution(models.Model):
     name = models.CharField(max_length=50)
+
+
+class Takes(models.Model):
+    academic_year = models.CharField(max_length=10)
+    student = models.ForeignKey('Student', on_delete=models.CASCADE)
+    course = models.ForeignKey('Course', on_delete=models.CASCADE)
+    semester = models.PositiveSmallIntegerField(default=1)

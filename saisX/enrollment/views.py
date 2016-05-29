@@ -42,6 +42,9 @@ class GradesView(ListView):
     model = Student
     template_name = 'enrollment/viewgrades.html'
 
+    def get_context_data(self, **kwargs):
+
+
 
 class EditView(TemplateView):
     model = Student
