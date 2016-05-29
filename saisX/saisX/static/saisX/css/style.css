@@ -21,6 +21,24 @@
 	padding-right: 10px;
 }
 
+
+nav .title-l {
+  display: block;
+}
+nav .title-s {
+  display: none;
+}
+
+@media all and (max-width: 710px) {
+  nav .title-l {
+    display: none;
+  }
+  nav .title-s {
+    display: block;
+  }
+}
+
+
 .login-container{
   padding: 20px 20px 20px 20px;
 }
