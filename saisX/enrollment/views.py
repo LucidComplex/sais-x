@@ -69,3 +69,6 @@ class EditView(TemplateView):
 class ProfileView(TemplateView):
     model = Student
     template_name = 'enrollment/profile.html'
+
+class CoursesView(TemplateView):
+    template_name = 'enrollment/courses.html'

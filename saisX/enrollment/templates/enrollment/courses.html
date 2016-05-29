@@ -1,0 +1,41 @@
+{% include 'saisX/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>SAIS | Manage Courses</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="row center green darken-4 white-text head-container" >
+    <h4>Manage My Courses</h4>
+  </div>
+  <div class="row info-container grey lighten-3">
+    <div class="row center">
+      <div class="input-field offset-l2 offset-m2 offset-s2  col l8 m8 s8 center">
+        <input type="text" id="search_course" class="validate center">
+        <label for="search_course"><i class="material-icons" style="vertical-align: bottom">search</i>Search Course</label>
+      </div>
+    </div>
+    <div class="row center">
+      <h5><b>Search Results</b></h5>
+    </div>
+    <div class="row">
+      <div class="offset-l2 offset-m2 offset-s2 col l8 m8 s8">
+        <ul class="collection">
+          <li class="collection-item">
+            <div>
+                Bio 1 - Introduction to Biology <br>
+                MTh 9:00-10:30
+                <a class="secondary-content" type="checkbox" id="course_check"></a>
+            </div>
+          </li>
+          <li class="collection-item avatar"></li>
+          <li class="collection-item avatar"></li>
+          <li class="collection-item avatar"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

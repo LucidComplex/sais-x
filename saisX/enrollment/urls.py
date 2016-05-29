@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'profile$', views.ProfileView.as_view(), name='profile'),
     url(r'grades$', views.GradesView.as_view(), name='grades'),
     url(r'schedule$', views.ScheduleView.as_view(), name='schedule'),
+    url(r'courses$', views.CoursesView.as_view(), name='courses')
 ]

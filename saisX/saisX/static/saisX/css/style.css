@@ -52,7 +52,7 @@ nav .title-s {
 
 
 .input-field input[type=text]:focus + label {
-    color: #fddd00;
+    color: #00c853;
 }
 
 .input-field input[type=text]:focus {
@@ -61,7 +61,7 @@ nav .title-s {
 }
 
 .input-field input[type=email]:focus + label {
-    color: #fddd00;
+    color: #00c853;
 }
 
 .input-field input[type=email]:focus {
@@ -70,7 +70,7 @@ nav .title-s {
 }
 
 .input-field input[type=password]:focus + label {
-    color: #fddd00;
+    color: #00c853;
 }
 
 .input-field input[type=password]:focus {
@@ -109,4 +109,13 @@ nav .title-s {
 
 .touch {
   min-height: 80px;
+}
+
+.collection {
+  border: 0px;
+}
+
+.collection-item {
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 10px !important;
 }
