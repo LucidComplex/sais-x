@@ -30,7 +30,7 @@
         <li><a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="View Grades"><i class="material-icons">insert_chart</i></a></li>
         <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="View Syllabus"><i class="material-icons">toc</i></a></li>
         <li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Manage Courses"><i class="material-icons">dashboard</i></a></li>
-        <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="Home"><i class="material-icons">picture_in_picture</i></a></li>
+		<li><a class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="Home" href="{% url "enrollment:home" %}"><i class="material-icons">picture_in_picture</i></a></li>
       </ul>
     </div>
     {% block content %}
