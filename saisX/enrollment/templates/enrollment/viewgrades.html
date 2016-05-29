@@ -1,0 +1,61 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @Paksssssss
+ Unwatch 3
+  Star 0
+  Fork 0 LucidComplex/sais-x
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
+Tree: c8ce6b7e37 Find file Copy pathsais-x/saisX/enrollment/templates/enrollment/viewgrades.html
+c8ce6b7  25 minutes ago
+ Paks worked with view grades
+0 contributors
+RawBlameHistory    44 lines (40 sloc)  1.53 KB
+  {% include 'saisX/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>SAIS | View Grades</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="row center green darken-4 white-text head-container" >
+    <h3>View Grades</h3>
+  </div>
+  <div class="row info-container grey lighten-3">
+    <ul class="collapsible popout" data-collapsible="expandable">
+    <li>
+      <div class="collapsible-header center"><span><b>S.Y. 2013-2014</b></span></div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header center"><span><b>S.Y. 2014-2015</b></span></div>
+      <div class="collapsible-body">
+        <div class="row center" style="padding-top: 15px">
+          <div class="col l4 m4 s6">
+            <button class="waves-effect waves-light btn grades-button" href=""><h6><span>First Semester</span></h6></button>
+          </div>
+          <div class="col l4 m4 s6">
+            <button class="waves-effect waves-light btn grades-button" href=""><h6><span>Second Semester</span></h6></button>
+          </div>
+          <div class="col l4 m4 s6">
+            <button class="waves-effect waves-light btn grades-button" href=""><h6><span>Mid-Year</span></h6></button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header center"><span><b>S.Y. 2015-2016</b></span></div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+
+  </div>
+</div>
+{% endblock content %}
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help

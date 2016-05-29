@@ -97,3 +97,10 @@ nav .title-s {
   padding-top: 1px;
   margin-bottom: 0px;
 }
+
+
+.grades-button{
+    height: 50px !important;
+    width: 250px !important;
+    background-color: #b71c1c !important;
+}
