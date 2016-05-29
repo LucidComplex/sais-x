@@ -21,24 +21,6 @@
 	padding-right: 10px;
 }
 
-
-nav .title-l {
-  display: block;
-}
-nav .title-s {
-  display: none;
-}
-
-@media all and (max-width: 710px) {
-  nav .title-l {
-    display: none;
-  }
-  nav .title-s {
-    display: block;
-  }
-}
-
-
 .login-container{
   padding: 20px 20px 20px 20px;
 }
@@ -96,4 +78,10 @@ nav .title-s {
   border-radius: 15px 15px 0px 0px !important;
   padding-top: 1px;
   margin-bottom: 0px;
+}
+
+.grades-button{
+    height: 50px !important;
+    width: 250px !important;
+    background-color: #b71c1c !important;
 }
