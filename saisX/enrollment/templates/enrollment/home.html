@@ -6,7 +6,7 @@
 {% block content %}
 <div class="container">
   <div class="row center">
-    <h4 class="col l12 m12 s12">Welcome, Name of Student</h4>
+	  <h4 class="col l12 m12 s12">Welcome, {{ request.user.get_full_name }}</h4>
   </div>
   <div class="row">
     <div class="col l6 m12 s12 center hb-div">
