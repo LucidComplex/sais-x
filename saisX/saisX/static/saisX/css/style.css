@@ -1,5 +1,5 @@
 .nav-wrapper{
-  padding-left: 15px;
+  padding-left: 15px !important;
   padding-top: 2px !important ;
 }
 
@@ -7,14 +7,19 @@
   height: 100%
 }
 
-.brand-logo{
+.home-buttons{
+  height: 60px !important;
+  width: 400px !important;
+  background-color: #1b5e20 !important;
+  display: inline-block;
+  vertical-align: middle;
 }
-
-
 
 .navbar {
 	background-color: #242323;
 	padding-left: 10px;
 	padding-right: 10px;
-  height:
+}
+
+.button-span{
 }
