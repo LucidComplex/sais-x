@@ -57,3 +57,25 @@
 
 .input-field input[type=password]:focus {
 	border-bottom: 1px solid #00c853;
+}
+
+.major-info{
+  font-size: 23px !important;
+}
+
+.minor-info{
+  font-size: 20px !important;
+}
+
+.info-container{
+  margin-top: 0px !important;
+  padding-top: 20px !important;
+  padding-left: 10px;
+  border-radius: 0px 0px 15px 15px !important;
+}
+
+.head-container{
+  border-radius: 15px 15px 0px 0px !important;
+  padding-top: 1px;
+  margin-bottom: 0px;
+}
