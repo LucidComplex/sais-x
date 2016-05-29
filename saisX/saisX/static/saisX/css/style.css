@@ -104,3 +104,7 @@ nav .title-s {
     width: 250px !important;
     background-color: #b71c1c !important;
 }
+
+.touch {
+  min-height: 80px;
+}
