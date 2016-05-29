@@ -35,7 +35,7 @@ class LoginView(FormView):
 
 class ScheduleView(TemplateView):
     model = Student
-    template_name = 'enrollement/schedule.html'
+    template_name = 'enrollment/schedule.html'
 
 
 class GradesView(ListView):
