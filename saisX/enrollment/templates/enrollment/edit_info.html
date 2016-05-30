@@ -9,25 +9,75 @@
   <div class="row center green darken-4 white-text head-container" >
     <h4>Edit Information</h4>
   </div>
-  <div>
-    
-  </div>
-  <div class="row edit-row" >
+  <div class="row edit-row info-container grey lighten-3">
+    <div class="input-field col l4 m12 s12">
+      <input disabled type="text" class="validate" id="student_number" value = "2013-54677">
+      <label class="active" for="student_number">Student Number</label>
+    </div>
+    <div class="input-field col l4 m6 s12">
+      <input disabled type="text" class="validate" id="sais_number" value = "00301054677">
+      <label class="active" for="sais_number">SAIS Number</label>
+    </div>
+    <div class="input-field col l4 m6 s12">
+      <input disabled type="text" class="validate" id="program" value = "BS - Computer Science III">
+      <label class="active" for="program">Year and Program</label>
+    </div>
     <div class="input-field col l6 12 s12">
-      <input type="text" class="validate" id="first_name" value = "{{student.first_name}}">
+      <input type="text" class="validate" id="first_name" value = "Vincent">
       <label class="active" for="first_name">First Name</label>
     </div>
-    <div class="input-field col l6 12 s12">
-      <input type="text" class="validate" id="last_name" value = "{{student.last_name}}">
+    <div class="input-field col l6 m12 s12">
+      <input type="text" class="validate" id="last_name" value = "Pakson">
       <label class="active" for="last_name">Last Name</label>
     </div>
-    <div class="input-field col l6 12 s12">
-      <input type="text" class="validate" id="email" value = "{{student.last_name}}">
+    <div class="input-field col l6 m12 s12">
+      <input type="text" class="validate" id="email" value = "vincentpakson@up.edu.ph">
       <label class="active" for="email">Email</label>
     </div>
-    <div class="input-field col l6 12 s12">
-      <input type="text" class="validate" id="last_name" value = "{{student.last_name}}">
-      <label class="active" for="last_name">Last Name</label>
+    <div class="input-field col l3 m6 s12">
+      <input type="text" class="validate" id="contact_number" value = "09223123413">
+      <label class="active" for="contact_number">Contact Number</label>
+    </div>
+    <div class="input-field col l3 m6 s12">
+      <input type="text" class="validate" id="birthdate" value = "August 24, 1996">
+      <label class="active" for="birthdate">Birthdate</label>
+    </div>
+    <div class="input-field col l12 m12 s12">
+      <input type="text" class="validate" id="perm_address" value = "Cebu City">
+      <label class="active" for="perm_address">Permanent Address</label>
+    </div>
+    <div class="input-field col l12 m12 s12">
+      <input type="text" class="validate" id="curr_address" value = "Cebu City">
+      <label class="active" for="curr_address">Current Address</label>
+    </div>
+    <div class="col l12 m12 s12">
+      <div class="row">
+        <div class="col l6 m12 s12">
+          <h6><b>Father's Info</b></h6>
+          <div class="input-field offset-l1 col l11 m12 s12">
+            <input type="text" class="validate" id="fathers_name" value = "Papa">
+            <label class="active" for="fathers_name">Father's Name</label>
+          </div>
+          <div class="input-field offset-l1 col l11 m12 s12">
+            <input type="text" class="validate" id="fathers_contact" value = "09221234567">
+            <label class="active" for="fathers_contact">Father's Contact No.</label>
+          </div>
+        </div>
+        <div class="col l6 m12 s12">
+          <h6><b>Mother's Info</b></h6>
+          <div class="input-field offset-l1 col l11 m12 s12">
+            <input type="text" class="validate" id="mothers_name" value = "Mama">
+            <label class="active" for="mothers_name">Mother's Name</label>
+          </div>
+          <div class="input-field offset-l1 col l11 m12 s12">
+            <input type="text" class="validate" id="mothers_contact" value = "09223451634">
+            <label class="active" for="mothers_contact">Mother's Contact No.</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col 12 m12 s12 center">
+      <button class="waves-effect waves-light btn home-buttons" href=""><h5><span>Save Changes</span></h5></button>
     </div>
   </div>
 </div>
