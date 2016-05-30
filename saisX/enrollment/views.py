@@ -52,8 +52,14 @@ class ProfileView(TemplateView):
     model = Student
     template_name = 'enrollment/profile.html'
 
-class CoursesView(TemplateView):
-    template_name = 'enrollment/courses.html'
+class ManageView(TemplateView):
+    template_name = 'enrollment/manage.html'
 
 class EnrollView(TemplateView):
     template_name = 'enrollment/enroll.html'
+
+class EnlistView(TemplateView):
+    template_name = 'enrollment/enlist.html'
+
+class CoursesView(TemplateView):
+    template_name = 'enrollment/courses.html'

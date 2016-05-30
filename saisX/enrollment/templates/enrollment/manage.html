@@ -1,0 +1,22 @@
+{% include 'saisX/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>SAIS | Manage Courses</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row center green darken-4 white-text head-container" >
+        <h4>Manage my Courses</h4>
+    </div>
+    <div class="row center info-container grey lighten-3" style="margin-top: 20px">
+        <div class="col l12 m12 s12 center hb-div">
+            <a class="waves-effect waves-light btn manage-buttons" href="{% url "enrollment:courses" %}"><h5><span >My Courses</span></h5></a>
+        </div>
+        <div class="col l12 m12 s12 center hb-div">
+            <a class="waves-effect waves-light btn manage-buttons" href="{% url "enrollment:enlist" %}"><h5><span >Enlist</span></h5></a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

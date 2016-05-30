@@ -2,17 +2,23 @@
 {% load staticfiles %}
 
 {% block title %}
-<title>SAIS | Enrollment</title>
+<title>SAIS | Enlist Courses</title>
 {% endblock title %}
 
 {% block content %}
 <div class="container">
   <div class="row center green darken-4 white-text head-container" >
-    <h4>Enroll Courses</h4>
+    <h4>Enlist Courses</h4>
   </div>
   <div class="row info-container grey lighten-3">
     <div class="row center">
-      <h5><b>Enlisted Courses</b></h5>
+      <div class="input-field offset-l2 offset-m2 offset-s2  col l8 m8 s8 center">
+        <input type="text" id="search_course" class="validate center">
+        <label for="search_course"><i class="material-icons" style="vertical-align: bottom">search</i>Search Course</label>
+      </div>
+    </div>
+    <div class="row center">
+      <h5><b>Search Results</b></h5>
     </div>
     <div class="row">
       <div class="offset-l2 offset-m2 offset-s2 col l8 m8 s8">
@@ -87,14 +93,14 @@
     </div>
     <div class="row center">
       <div class="col l6 m12 s12">
-        <a class="waves-effect waves-light btn enlist-button" href="#"><h6><span>Drop from List</span></h6></a>
+        <a class="waves-effect waves-light btn enlist-button" href="#"><h6><span>Enlist Courses</span></h6></a>
       </div>
       <div class="col l6 m12 s12">
-        <a class="waves-effect waves-light btn enroll-button" href="#"><h6><span>Enroll Courses</span></h6></a>
+        <a class="waves-effect waves-light btn enroll-button" href="{% url 'enrollment:enroll' %}"><h6><span>Proceed to Enrollment</span></h6></a>
       </div>
     </div>
     <div class="row center">
-      <a href="{% url 'enrollment:enlist' %}"><< Back to Enlistment</a>
+      <a class="modal-trigger" href="#view_enlist">View Enlisted Courses >></a>
     </div>
   </div>
   <div id="course1" class="modal">
@@ -214,6 +220,50 @@
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enlist</a>
+    </div>
+  </div>
+  <div id="view_enrolled" class="modal">
+    <div class="modal-content">
+      <ul class="collection">
+        <<li class="collection-item">
+            <div class="row" style="margin-bottom: 3px !important">
+              <div class="col l11 m11 s11">
+                <a class="modal-trigger" href="#course1">CMSC 22 A - Object-Oriented Programming</a>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="row" style="margin-bottom: 3px !important">
+              <div class="col l11 m11 s11">
+                <a class="modal-trigger" href="#course2">Bio 1 F - Introduction to Biology</a>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="row" style="margin-bottom: 3px !important">
+              <div class="col l11 m11 s11">
+                <a class="modal-trigger" href="#course3">Socsci 2 H - Something about SOCSCI</a>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="row" style="margin-bottom: 3px !important">
+              <div class="col l11 m11 s11">
+                <a class="modal-trigger" href="#course4">Math 17 B - Elementary Algebra and Trigonometry</a>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="row" style="margin-bottom: 3px !important">
+              <div class="col l11 m11 s11">
+                <a class="modal-trigger" href="#course5">CMSC 11 B - Introduction to Computer Science </a>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
     </div>
   </div>
 </div>
