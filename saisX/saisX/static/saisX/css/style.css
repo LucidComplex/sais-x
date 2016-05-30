@@ -144,3 +144,26 @@ nav .title-s {
   padding-top:10px;
   padding-bottom:15px
 }
+
+.schedule-table .row {
+  margin-bottom: 0px;
+  border-bottom: 1px solid black;
+  height: 23.3px;
+}
+
+.schedule-table .col {
+  border-right: 1px solid black;
+  position: relative;
+}
+
+#days .col {
+  width: 14.28%;
+  height: 23.3px;
+}
+
+.schedule-card {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  margin: 0;
+}
