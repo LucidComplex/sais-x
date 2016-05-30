@@ -47,24 +47,6 @@ class EditView(TemplateView):
     model = Student
     template_name = 'enrollment/edit_info.html'
 
-    def get_context_data(self, **kwargs):
-        context = super(EditView, self).get_context_data(**kwargs)
-        context['studentform'] = StudentForm(isinstance = self.request.student, data=self.request.POST)
-
-        return context
-
-    def post(self, request, **kwargs):
-        context = self.get_context_data(**kwargs)
-
-        studentform = context['studentform']
-
-        if studentform.is_valid():
-            studentform.save()
-        else:
-            print studentform.errors
-
-        return self.render_to_response(context)
-
 
 class ProfileView(TemplateView):
     model = Student
