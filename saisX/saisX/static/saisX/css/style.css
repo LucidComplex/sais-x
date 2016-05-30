@@ -154,3 +154,14 @@ nav .title-s {
 .enroll-button:hover{
   background-color: #d50000;
 }
+
+.manage-buttons{
+  height: 50px;
+  width: 300px;
+  background-color: #b71c1c;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.manage-buttons:hover{
+  background-color: #d50000
+}

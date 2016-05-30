@@ -2,270 +2,89 @@
 {% load staticfiles %}
 
 {% block title %}
-<title>SAIS | Manage Courses</title>
+<title>SAIS | My Courses</title>
 {% endblock title %}
 
 {% block content %}
 <div class="container">
   <div class="row center green darken-4 white-text head-container" >
-    <h4>Manage My Courses</h4>
+    <h3>My Courses</h3>
   </div>
   <div class="row info-container grey lighten-3">
-    <div class="row center">
-      <div class="input-field offset-l2 offset-m2 offset-s2  col l8 m8 s8 center">
-        <input type="text" id="search_course" class="validate center">
-        <label for="search_course"><i class="material-icons" style="vertical-align: bottom">search</i>Search Course</label>
-      </div>
-    </div>
-    <div class="row center">
-      <h5><b>Search Results</b></h5>
-    </div>
-    <div class="row">
-      <div class="offset-l2 offset-m2 offset-s2 col l8 m8 s8">
-        <ul class="collection">
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 0px">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course1">CMSC 22 A - Object-Oriented Programming</a>
-              </div>
-              <div class="col l1 m1 s1">
-                <form action="#!">
-                  <input type="checkbox" id="course_check1">
-                  <label for="course_check1"></label>
-                </form>
-              </div>
+    <ul class="collapsible popout" data-collapsible="expandable">
+      <li>
+        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">S.Y. 2013-2014</b></span></div>
+        <div class="collapsible-body">
+            <div class="scollapsible-container">
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">First Semester</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">Second Semester</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">Mid Year</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 0px">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course2">Bio 1 F - Introduction to Biology</a>
-              </div>
-              <div class="col l1 m1 s1">
-                <form action="#!">
-                  <input type="checkbox" id="course_check2">
-                  <label for="course_check2"></label>
-                </form>
-              </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">S.Y. 2014-2015</b></span></div>
+        <div class="collapsible-body">
+            <div class="scollapsible-container">
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">First Semester</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">Second Semester</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">Mid Year</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 0px">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course3">Socsci 2 H - Something about SOCSCI</a>
-              </div>
-              <div class="col l1 m1 s1">
-                <form action="#!">
-                  <input type="checkbox" id="course_check3">
-                  <label for="course_check3"></label>
-                </form>
-              </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">S.Y. 2015-2016</b></span></div>
+        <div class="collapsible-body">
+            <div class="scollapsible-container">
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">First Semester</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">Second Semester</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center"><span class="valign-wrapper touch"><b style="width:100%;">Mid Year</b></span></div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 0px">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course4">Math 17 B - Elementary Algebra and Trigonometry</a>
-              </div>
-              <div class="col l1 m1 s1">
-                <form action="#!">
-                  <input type="checkbox" id="course_check4">
-                  <label for="course_check4"></label>
-                </form>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 0px">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course5">CMSC 11 B - Introduction to Computer Science</a>
-              </div>
-              <div class="col l1 m1 s1">
-                <form action="#!">
-                  <input type="checkbox" id="course_check5">
-                  <label for="course_check5"></label>
-                </form>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row center">
-      <div class="col l6 m12 s12">
-        <a class="btn enlist-button disabled" href="#"><h6><span>Enlist Courses</span></h6></a>
-      </div>
-      <div class="col l6 m12 s12">
-        <a class="waves-effect waves-light btn enroll-button" href="{% url 'enrollment:enroll' %}"><h6><span>Proceed to Enrollment</span></h6></a>
-      </div>
-    </div>
-    <div class="row center">
-      <a class="modal-trigger" href="#view_enlist">View Enlisted Courses >></a> <br>
-      <a class="modal-trigger" href="#view_enrolled">View Enrolled Courses >></a>
-    </div>
-  </div>
-  <div id="course1" class="modal">
-    <div class="modal-content">
-      <h4>CMSC 22 - A</h4>
-      <h5>Introduction to Object-Oriented Programming</h5>
-      <p>
-        Schedule: MTh 9:00-10:30 <br>
-        Classroom: AS 302 <br>
-        Instructor: Prof. Don Pakson <br>
-        Category: Computer Science
-      </p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
-    </div>
-  </div>
-  <div id="course2" class="modal">
-    <div class="modal-content">
-      <h4>Bio 1 - F</h4>
-      <h5>Introduction to Biology</h5>
-      <p>
-        Schedule: TF 1:00-2:30 <br>
-        Classroom: Room 126 <br>
-        Instructor: Mr. Angelo Reymundo <br>
-        Category: MST
-      </p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
-    </div>
-  </div>
-  <div id="course3" class="modal">
-    <div class="modal-content">
-      <h4>Socsci 2 - H</h4>
-      <h5>Something about SOCSCI</h5>
-      <p>
-        Schedule: MTh 10:30-12:00 <br>
-        Classroom: AS 246 <br>
-        Instructor: Prof. Axel Tan <br>
-        Category: Social Sciences
-      </p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
-    </div>
-  </div>
-  <div id="course4" class="modal">
-    <div class="modal-content">
-      <h4>Math 17 - B</h4>
-      <h5>Elementary Algebra and Trigonometry</h5>
-      <p>
-        Schedule: TF 9:00-10:30 <br>
-        Classroom: AS 206 <br>
-        Instructor: Prof. Andrew Bluzi <br>
-        Category: Math
-      </p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
-    </div>
-  </div>
-  <div id="course5" class="modal">
-    <div class="modal-content">
-      <h4>CMSC 11 - B</h4>
-      <h5>Introduction to Computer Science</h5>
-      <p>
-        Schedule: MTh 2:30-4:00 <br>
-        Classroom: AS 306 <br>
-        Instructor: Prof. Ryan Rehigor <br>
-        Category: Computer Science
-      </p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
-    </div>
-  </div>
-  <div id="view_enlist" class="modal">
-    <div class="modal-content">
-      <ul class="collection">
-        <<li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course1">CMSC 22 A - Object-Oriented Programming</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course2">Bio 1 F - Introduction to Biology</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course3">Socsci 2 H - Something about SOCSCI</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course4">Math 17 B - Elementary Algebra and Trigonometry</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course5">CMSC 11 B - Introduction to Computer Science </a>
-              </div>
-            </div>
-          </li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enlist</a>
-    </div>
-  </div>
-  <div id="view_enrolled" class="modal">
-    <div class="modal-content">
-      <ul class="collection">
-        <<li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course1">CMSC 22 A - Object-Oriented Programming</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course2">Bio 1 F - Introduction to Biology</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course3">Socsci 2 H - Something about SOCSCI</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course4">Math 17 B - Elementary Algebra and Trigonometry</a>
-              </div>
-            </div>
-          </li>
-          <li class="collection-item">
-            <div class="row" style="margin-bottom: 3px !important">
-              <div class="col l11 m11 s11">
-                <a class="modal-trigger" href="#course5">CMSC 11 B - Introduction to Computer Science </a>
-              </div>
-            </div>
-          </li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OKAY!</a>
-    </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 {% endblock content %}
