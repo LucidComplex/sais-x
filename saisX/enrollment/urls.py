@@ -12,5 +12,6 @@ urlpatterns = [
     url(r'schedule$', views.ScheduleView.as_view(), name='schedule'),
     url(r'courses$', views.CoursesView.as_view(), name='courses'),
     url(r'edit$', views.EditView.as_view(), name='edit'),
-    url(r'syllabus$', views.SyllabusView.as_view(), name='syllabus')
+    url(r'enroll$', views.EnrollView.as_view(), name='enroll'),
 ]
+
