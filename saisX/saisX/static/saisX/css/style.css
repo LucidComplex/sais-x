@@ -11,8 +11,7 @@
   height: 60px !important;
   width: 350px !important;
   background-color: #1b5e20 !important;
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 7px;
 }
 
 .navbar {
@@ -143,4 +142,15 @@ nav .title-s {
 .edit-row{
   padding-top:10px;
   padding-bottom:15px
+}
+
+.enroll-button{
+  height: 50px;
+  width: 300px;
+  padding-top: 10px;
+  background-color: #b71c1c;
+}
+
+.enroll-button:hover{
+  background-color: #d50000;
 }
