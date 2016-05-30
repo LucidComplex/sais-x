@@ -55,5 +55,3 @@ class ProfileView(TemplateView):
 class CoursesView(TemplateView):
     template_name = 'enrollment/courses.html'
 
-class SyllabusView(TemplateView):
-    template_name = 'enrollment/syllabus.html'
